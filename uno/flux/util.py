@@ -180,7 +180,7 @@ configs = {
         ),
     ),
     "flux-schnell": ModelSpec(
-        repo_id="black-forest-labs/FLUX.1-schnell",
+        repo_id="OwlMaster/schnell",
         repo_id_ae="BestModelsv2/FLUX",
         repo_flow="flux1-schnell.safetensors",
         repo_ae="ae.safetensors",

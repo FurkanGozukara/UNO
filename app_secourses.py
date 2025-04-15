@@ -106,7 +106,7 @@ def create_demo(
     """.strip()
 
     with gr.Blocks() as demo:
-        gr.Markdown(f"# ByteDance UNO SECourses Improved App V1 - https://www.patreon.com/posts/126674316")
+        gr.Markdown(f"# ByteDance UNO SECourses Improved App V2 - https://www.patreon.com/posts/126674316")
         #gr.Markdown(badges_text)
         with gr.Row():
             with gr.Column():
