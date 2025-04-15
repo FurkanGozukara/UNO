@@ -45,7 +45,7 @@ pip install -r requirements.txt
 
 then download checkpoints in one of the three ways:
 1. Directly run the inference scripts, the checkpoints will be downloaded automatically by the `hf_hub_download` function in the code to your `$HF_HOME`(the default value is `~/.cache/huggingface`).
-2. use `huggingface-cli download <repo name>` to download `black-forest-labs/FLUX.1-dev`, `xlabs-ai/xflux_text_encoders`, `openai/clip-vit-large-patch14`, `bytedance-research/UNO`, then run the inference scripts. You can just download the checkpoint in need only to speed up your set up and save your disk space. i.e. for `black-forest-labs/FLUX.1-dev` use `huggingface-cli download black-forest-labs/FLUX.1-dev flux1-dev.safetensors` and `huggingface-cli download black-forest-labs/FLUX.1-dev ae.safetensors`, ignoreing the text encoder in `black-forest-labes/FLUX.1-dev` model repo(They are here for `diffusers` call). All of the checkpoints will take 37 GB of disk space.
+2. use `huggingface-cli download <repo name>` to download `BestModelsv2/FLUX`, `xlabs-ai/xflux_text_encoders`, `openai/clip-vit-large-patch14`, `bytedance-research/UNO`, then run the inference scripts. You can just download the checkpoint in need only to speed up your set up and save your disk space. i.e. for `BestModelsv2/FLUX` use `huggingface-cli download BestModelsv2/FLUX flux1-dev.safetensors` and `huggingface-cli download BestModelsv2/FLUX ae.safetensors`, ignoreing the text encoder in `black-forest-labes/FLUX.1-dev` model repo(They are here for `diffusers` call). All of the checkpoints will take 37 GB of disk space.
 3. use `huggingface-cli download <repo name> --local-dir <LOCAL_DIR>` to download all the checkpoints mentioned in 2. to the directories your want. Then set the environment variable `AE`, `FLUX_DEV`(or `FLUX_DEV_FP8` if you use fp8 mode), `T5`, `CLIP`, `LORA` to the corresponding paths. Finally, run the inference scripts.
 4. **If you already have some of the checkpoints**, you can set the environment variable `AE`, `FLUX_DEV`, `T5`, `CLIP`, `LORA` to the corresponding paths. Finally, run the inference scripts.
 
@@ -110,7 +110,7 @@ We open-source this project for academic research. The vast majority of images
 used in this project are either generated or licensed. If you have any concerns, 
 please contact us, and we will promptly remove any inappropriate content. 
 Our code is released under the Apache 2.0 License,, while our models are under 
-the CC BY-NC 4.0 License. Any models related to <a href="https://huggingface.co/black-forest-labs/FLUX.1-dev" target="_blank">FLUX.1-dev</a> 
+the CC BY-NC 4.0 License. Any models related to <a href="https://huggingface.co/BestModelsv2/FLUX" target="_blank">FLUX.1-dev</a> 
 base model must adhere to the original licensing terms.
 <br><br>This research aims to advance the field of generative AI. Users are free to 
 create images using this tool, provided they comply with local laws and exercise 
