@@ -1,8 +1,3 @@
-<h3 align="center">
-    <img src="assets/logo.png" alt="Logo" style="vertical-align: middle; width: 40px; height: 40px;">
-    Less-to-More Generalization: Unlocking More Controllability by In-Context Generation
-</h3>
-
 # Our App Even Supports RTX 5000 Series Use This Link to Download and Install : https://www.patreon.com/posts/126674316
 
 ![screencapture-127-0-0-1-7860-2025-04-15-03_30_58](https://github.com/user-attachments/assets/6a74204c-8741-4a1d-b6f4-eb2c2c02829a)
